@@ -1,10 +1,7 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
 import supabase from '../client';
+import { LoginForm } from '@/types/auth';
 
-interface LoginForm {
-  email: string;
-  password: string;
-}
 export const useSession = () => {
   return useQuery({
     queryKey: ['session'],

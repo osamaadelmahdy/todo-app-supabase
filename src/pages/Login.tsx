@@ -9,15 +9,11 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { useLogin } from '@/hooks/useAuth';
+import { LoginForm } from '@/types/auth';
 
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
-
-interface LoginForm {
-  email: string;
-  password: string;
-}
 
 function Login() {
   const navigate = useNavigate();
